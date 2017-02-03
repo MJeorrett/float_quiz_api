@@ -11,5 +11,15 @@ module FloatQuizApi
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins([
+          'http://localhost:3000',
+          'https://arcane-harbor-35765.herokuapp.com/'
+        ])
+        resource '*', :headers => :any, :methods => [:get]
+      end
+    end
   end
 end
