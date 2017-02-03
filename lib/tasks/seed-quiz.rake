@@ -1,7 +1,7 @@
 require 'csv'
 require_relative '../rake_helpers/quiz_parser'
 
-task "csv-seed" => :environment do
+task "seed-quiz" => :environment do
 
   Answer.delete_all
   Question.delete_all
