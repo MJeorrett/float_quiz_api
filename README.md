@@ -14,4 +14,4 @@ To install the app locally:
 - run `rake seed-quiz`, this will seed the questions into the database from the csv file located at 'lib/assets/quiz.csv'
 - run `rake server`, this will start the server on port 5000 (which is expected by the client)
 
-To install the client see follow the instructions in it's readme which can be found at https://github.com/MJeorrett/float_quiz_client.
+To install the client follow the instructions in it's readme which can be found at https://github.com/MJeorrett/float_quiz_client.
