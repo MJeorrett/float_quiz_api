@@ -1,24 +1,17 @@
-# README
+# Float Cash Flow Quiz API
+This is the api that provides the questions to the float_quiz_api. It is written in Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The API is hosted at https://radiant-badlands-70710.herokuapp.com, an access token is required which is available on request.
 
-Things you may want to cover:
+## Local Installation instructions
 
-* Ruby version
+To install the app locally:
+- Clone this repo
+- Move into the created directory
+- run `bundle install`
+- run `rake db:create`
+- run `rake db:migrate`
+- run `rake seed-quiz`, this will seed the questions into the database from the csv file located at 'lib/assets/quiz.csv'
+- run `rake server`, this will start the server on port 5000 (which is expected by the client)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To install the client see follow the instructions in it's readme which can be found at https://github.com/MJeorrett/float_quiz_client.
